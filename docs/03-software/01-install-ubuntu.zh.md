@@ -1,4 +1,4 @@
-# 安装 Ubuntu 22.04 桌面版
+# Ubuntu 22.04 桌面版安装 
 
 本教程适用于在已有 Windows 11 的电脑上安装 **Ubuntu 22.04 LTS（Jammy Jellyfish）桌面版**，用于 ROS 2 教学与实验环境。
 
@@ -47,7 +47,7 @@
 2. 选择 **Desktop 映像**
 3. 下载得到文件，例如：
    
-   ubuntu-22.04.5-desktop-amd64.iso
+   [ ubuntu-22.04.5-desktop-amd64.iso ]
 
 
 > [!TIP]
@@ -64,27 +64,34 @@
 ## 四、制作 Ubuntu 启动盘（推荐 Rufus，可选balenaEtcher）
 > [!WARNING]
 > 此操作会清空 U 盘，请提前备份 U 盘内文件。
-##### 方案A：
+##### 方案A：使用 **Rufus**（Windows）。
 
-1. 下载 Rufus（Windows）：https://rufus.ie/zh/
+1. 下载 [Rufus](https://rufus.ie/zh/)（Windows）	[ 官方网站: [https://rufus.ie/zh/](https://rufus.ie/zh/) ]
 2. 插入 ≥ 8 GB U 盘
 3. 打开 Rufus：
-   - 设备：选择你的 U 盘
-   - 引导类型：选择 Ubuntu ISO
-   - 分区类型：**GPT**
-   - 目标系统类型：**UEFI（非 CSM）**
+    - 设备：选择你的 U 盘
+    - 引导类型：选择 Ubuntu ISO
+    - 分区类型：**GPT**
+    - 目标系统类型：**UEFI（非 CSM）**
 4. 点击 **开始** → 选择 **ISO 镜像模式写入**
 5. 等待完成 ✅
 
-##### 方案B：
+##### 方案B：使用 **balenaEtcher**（跨平台、操作简单）。
 
-使用 **balenaEtcher**（跨平台、操作简单）。
-1. 访问 [balenaEtcher 官网](https://etcher.balena.io/) 下载对应系统版本
+1. 访问 [balenaEtcher 官网](https://etcher.balena.io/) 下载对应系统版本	[ 官方网站: [https://etcher.balena.io/](https://etcher.balena.io/) ]
+
+    ![](images/1003_download-etcher.png)
+
 2. 插入 U 盘（≥12 GB）
+
 3. 打开 balenaEtcher
+
+    ![](images/1004_select-iso.png)
+
 4. 选择：
-   - **镜像文件**：刚下载的 Ubuntu ISO
-   - **目标磁盘**：插入的 U 盘
+    - **镜像文件**：刚下载的 Ubuntu ISO
+    - **目标磁盘**：插入的 U 盘
+
 5. 点击 **Flash!** 等待写入完成
 
 
@@ -184,6 +191,7 @@
 
 ## 七、三方参考教程（详细图文）
 
-• https://www.cnblogs.com/luzhanshi/articles/19118891
+• [win10/11 下Ubuntu 22.04（桌面版） 双系统安装教程](https://www.cnblogs.com/luzhanshi/articles/19118891)
 
-• https://blog.csdn.net/2401_84064328/article/details/137232169
+• [Windows11 + Linux (Ubuntu22.04) 双系统最简安装](https://blog.csdn.net/2401_84064328/article/details/137232169)
+
