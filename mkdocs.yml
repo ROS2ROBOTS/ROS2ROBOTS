@@ -16,27 +16,15 @@ theme:
     
   language: zh # 默认语言
 
-  palette:
-    # 自动模式的调色板切换
-    - media: "(prefers-color-scheme)"
+  palette: 
+    - scheme: default
       toggle:
-        icon: material/brightness-auto
-        name: 切换到明亮模式
-    # 明亮模式的调色板切换
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
+        icon: material/weather-night
+        name: 切换到暗色模式
+    - scheme: slate
       toggle:
-        icon: material/brightness-7
-        name: 切换到黑暗模式
-    # 黑暗模式的调色板切换
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/brightness-4
-        name: 切换到系统偏好
-
-  palette:
-    primary: purple  # 主题颜色
+        icon: material/weather-sunny
+        name: 切换到亮色模式
 
 extra:
   generator: false
@@ -82,6 +70,7 @@ nav:
     - Python 依赖: 03-software/04-install-python-deps.zh.md
     - NVIDIA driver: 03-software/05-install-nvidia-driver.zh.md
     - Docker & NVIDIA: 03-software/06-install-docker-nvidia.zh.md
+    - 安装与配置 Git: 03-software/08-install-git.zh.md
 
   - 基础教学:
       - ROS 2:
